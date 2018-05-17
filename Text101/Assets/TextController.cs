@@ -16,7 +16,7 @@ public class TextController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print(myState);
+		// print(myState);
 		if (myState == States.cell)                 { state_cell(); }
 		else if (myState == States.sheets_0)        { state_sheets_0(); }
 		else if (myState == States.sheets_1)        { state_sheets_1(); }
@@ -50,7 +50,7 @@ public class TextController : MonoBehaviour {
 					"and that pesky door is still there, and firmly locked!\n\n" +
 			        "Press S to view Sheets, or L to view Lock";
 		if (Input.GetKeyDown(KeyCode.S))        { myState = States.sheets_1; }
-		else if (Input.GetKeyDown(KeyCode.R))   { myState = States.lock_1; }
+		else if (Input.GetKeyDown(KeyCode.L))   { myState = States.lock_1; }
 	}
 
 	void state_sheets_0(){

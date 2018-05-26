@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LevelManager.cs" />
+    <Compile Include="Assets\Scenes\NumberWIzard.cs" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/ismail/Documents/LearnUnityDev/repo/Number-Wizard-Ui/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>

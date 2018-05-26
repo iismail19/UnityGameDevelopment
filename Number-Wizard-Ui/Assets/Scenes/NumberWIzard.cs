@@ -20,9 +20,8 @@ public class NumberWIzard : MonoBehaviour {
 	void StartGame(){
 		max = 1000;
 		min = 500;
-		guess = 500;
+		NextGuess();
 
-		max = max + 1; // bc if your number is 1000, (min + max) / 2 rounds down to 999.
 	}
 
 	public void GuessHigher(){
@@ -36,7 +35,7 @@ public class NumberWIzard : MonoBehaviour {
 	}
 
 	void NextGuess(){
-		guess = (max + min) / 2;
+		guess = Random.Range(min, max + 1);
 		text.text = guess.ToString();
 		maxGuessesAllowed--;
 		if(maxGuessesAllowed <= 0){
